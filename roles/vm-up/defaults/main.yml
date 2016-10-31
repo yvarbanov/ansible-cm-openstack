@@ -1,0 +1,48 @@
+---
+# defaults file for vm-up
+
+# You can modify here but please use group vars instead
+
+# Auth information: cloud name from clouds.yml
+
+cloud: mycloud
+
+####################
+# VM CONFIGURATION #
+####################
+
+# name of the vm
+instance_name: vm1
+
+# image to boot from
+image_name: cirros
+
+# instance key name
+key_name: admin
+
+# flavor id or name (currently set to m1.small)
+flavor_name: 2
+
+# security group
+security_groups: default
+
+# private network name
+net_name: priv_net
+
+# defaults to instance name
+hostname: "{{ instance_name }}"
+
+# Auto-assign floating ip
+public_ip: no
+# OR specify manually by uncommenting the next few lines
+# 
+#floating_ip:
+#  - 10.1.1.104
+#  - 10.1.1.105
+
+# To boot from volume, set the volume size (GB). 
+# 0 wont add volume
+vol_size: 0
+
+# Boot from volume,
+# vol_name: volume_name

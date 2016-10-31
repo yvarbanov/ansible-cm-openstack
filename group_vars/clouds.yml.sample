@@ -1,0 +1,9 @@
+# clouds.yaml example
+
+clouds:
+    test:
+      auth:
+        auth_url: http://10.1.1.100:35357/v2.0/
+        username: yvarbanov
+        password: mypass
+        project_name: demo

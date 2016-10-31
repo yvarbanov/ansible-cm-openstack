@@ -1,0 +1,45 @@
+---
+
+# Auth information: cloud name from clouds.yml
+
+cloud: ostack
+
+####################
+# VM CONFIGURATION #
+####################
+
+# name of the vm
+instance_name: MyInstance
+
+# image to boot from
+image_name: Ubuntu
+
+# instance key name
+key_name: mykey
+
+# flavor name or id (currently set to m1.small)
+# flavor_name: m1.small
+
+# private network name
+net_name: my_net
+
+# defaults to instance name or modify below
+# hostname: myhostname
+
+# Auto-assign floating Ip
+# public_ip: yes
+
+# OR specify manually by uncommenting the next few lines
+# 
+#floating_ip:
+#  - 10.10.10.107
+#  - 10.1.1.105
+
+# To boot from volume, set the volume size (GB). 
+# 0 wont add volume
+# vol_size: 0
+
+## Remove instance options
+
+# If booted from volume will delete said volume.
+# del_vol: True

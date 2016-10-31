@@ -1,0 +1,8 @@
+---
+- name: Delete {{ instance_name }}
+  os_server:
+    cloud: ostack
+    state: absent
+    wait: yes
+    name: "{{ instance_name }}"
+    terminate_volume: "{{ del_vol }}"

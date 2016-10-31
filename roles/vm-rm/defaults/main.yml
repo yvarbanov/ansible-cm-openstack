@@ -1,0 +1,15 @@
+---
+# defaults file for vm-rm
+
+# You can modify here but please use group vars instead
+
+# Auth information: cloud name from clouds.yml
+
+cloud: mycloud
+
+# instance name
+instance_name: vm1
+
+# If booted from volume will delete said volume.
+# Added for future purposes
+del_vol: False

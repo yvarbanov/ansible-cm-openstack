@@ -1,0 +1,18 @@
+---
+- name: Creating instance {{ instance_name }} with {{ vol_size }}GB volume and custom public ip
+  os_server:
+    cloud: "{{ cloud }}"
+    state: present
+    name: "{{ instance_name }}"
+    image: "{{ image_name }}"
+    key_name: "{{ key_name }}"
+    wait: yes
+    flavor: "{{ flavor_name }}"
+    security_groups: "{{ security_groups }}"
+    floating_ips: "{{ floating_ip }}"
+    nics:
+      - net-name: "{{ net_name }}"
+    meta:
+      hostname: "{{ hostname }}"
+    boot_from_volume: True
+    volume_size: "{{ vol_size }}"

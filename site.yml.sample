@@ -1,0 +1,16 @@
+---
+# - name: Launch a compute instance
+#   hosts: all
+#   roles:
+#    - role: vm-up
+
+# - name: Delete a compute instance
+#   hosts: all
+#   roles:
+#    - role: vm-rm
+
+ # - name: Create new, delete old
+ #   hosts: all
+ #   roles:
+ #    - { role: vm-rm, instance_name: vm1 }
+ #    - { role: vm-up, instance_name: vm2 }

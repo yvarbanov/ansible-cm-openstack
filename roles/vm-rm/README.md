@@ -7,16 +7,19 @@ Requirements
 ------------
 
 Ansible 2.0+
+
 Shade
+
 cloud.yaml
 
-clouds:
-    mycloud:
-       auth:
-        auth_url: http://openstack.com/v2.0/
-        username: yvarbanov
-        password: mypass
-        project_name: demo
+
+    clouds:
+        mycloud:
+           auth:
+            auth_url: http://openstack.com/v2.0/
+            username: yvarbanov
+            password: mypass
+            project_name: demo
 
 Place config file in /etc/ansible/openstack.yaml, /etc/openstack/clouds.yaml or ~/.config/openstack/clouds.yaml
 

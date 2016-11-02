@@ -2,7 +2,7 @@
 
 # Auth information: cloud name from clouds.yml
 
-cloud: ostack
+cloud: mycloud
 
 ####################
 # VM CONFIGURATION #
@@ -32,7 +32,7 @@ net_name: my_net
 # OR specify manually by uncommenting the next few lines
 # 
 #floating_ip:
-#  - 10.10.10.107
+#  - 10.1.1.104
 #  - 10.1.1.105
 
 # To boot from volume, set the volume size (GB). 

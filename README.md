@@ -28,7 +28,7 @@ Edit all.yml:
 	- key_name*
 	- net_name*
 
-*Set with valid (existing) variables:
+*Set with valid (existing) variables.
 
 * to delete instance:
 

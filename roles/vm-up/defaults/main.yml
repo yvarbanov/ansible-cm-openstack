@@ -38,7 +38,6 @@ public_ip: no
 # 
 #floating_ip:
 #  - 10.1.1.104
-#  - 10.1.1.105
 
 # To boot from volume, set the volume size (GB). 
 # 0 wont add volume

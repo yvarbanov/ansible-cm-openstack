@@ -1,23 +1,23 @@
 ---
-- include: templates/quick_auto.yml
+- include: scenarios/quick_auto.yml
   when: 
     - vol_size == 0
     - floating_ip is not defined
   static: False
 
-- include: templates/quick.yml
+- include: scenarios/quick.yml
   when: 
     - vol_size == 0
     - floating_ip is defined
   static: False
 
-- include: templates/vol_auto.yml
+- include: scenarios/vol_auto.yml
   when:
     - vol_size != 0
     - floating_ip is not defined
   static: False
 
-- include: templates/vol.yml
+- include: scenarios/vol.yml
   when:
     - vol_size != 0
     - floating_ip is defined

@@ -1,7 +1,7 @@
 ---
 - name: Delete {{ instance_name }}
   os_server:
-    cloud: ostack
+    cloud: {{ cloud }}
     state: absent
     wait: yes
     name: "{{ instance_name }}"
